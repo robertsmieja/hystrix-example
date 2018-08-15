@@ -3,10 +3,10 @@ package com.robertsmieja.examples.hystrix.commands;
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommandGroupKey;
 
-public class StringCommand extends HystrixCommand<String> {
+public class StringServiceCommand extends HystrixCommand<String> {
 
-    public StringCommand() {
-        super(Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("foo")));
+    public StringServiceCommand() {
+        super(Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey(StringServiceCommand.class.getSimpleName())));
     }
 
     @Override

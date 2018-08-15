@@ -30,12 +30,13 @@ ext {
 }
 
 dependencies {
+//	compile('org.jolokia:jolokia-core')
 	compile('org.springframework.boot:spring-boot-starter-actuator')
-	compile('org.springframework.boot:spring-boot-starter-data-cassandra-reactive')
+//	compile('org.springframework.boot:spring-boot-starter-data-cassandra-reactive')
 	compile('org.springframework.boot:spring-boot-starter-webflux')
 	compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
 	compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard')
-	compile('org.springframework.shell:spring-shell-starter:2.0.1.RELEASE')
+//	compile('org.springframework.shell:spring-shell-starter:2.0.1.RELEASE')
 	runtime('org.springframework.boot:spring-boot-devtools')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('io.projectreactor:reactor-test')
