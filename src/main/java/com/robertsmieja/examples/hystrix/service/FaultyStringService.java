@@ -27,7 +27,7 @@ public class FaultyStringService {
     public String hello(String world) throws IOException, InterruptedException {
         failRequest();
         addDelay();
-        
+
         return "Hello " + world;
     }
 
