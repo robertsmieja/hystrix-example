@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 @ManagedResource
 @Service
-public class SimpleStringService {
+public class StringService {
     @ManagedOperation
     public String helloWorld() {
         return "Hello World";
