@@ -32,10 +32,10 @@ public class HystrixStringService {
         Instant end = Instant.now();
         long durationMs = ChronoUnit.MILLIS.between(start, end);
 
-        sb.append("Result -").append(result).append(System.lineSeparator());
-        sb.append("Start -").append(start).append(System.lineSeparator());
-        sb.append("End -").append(end).append(System.lineSeparator());
-        sb.append("Duration (ms) -").append(durationMs).append(System.lineSeparator());
+        sb.append("Result - ").append(result).append(System.lineSeparator());
+        sb.append("Start - ").append(start).append(System.lineSeparator());
+        sb.append("End - ").append(end).append(System.lineSeparator());
+        sb.append("Duration (ms) - ").append(durationMs).append(System.lineSeparator());
 
         return sb.toString();
     }
@@ -50,10 +50,10 @@ public class HystrixStringService {
         Instant end = Instant.now();
         long durationMs = ChronoUnit.MILLIS.between(start, end);
 
-        sb.append("Result -").append(result).append(System.lineSeparator());
-        sb.append("Start -").append(start).append(System.lineSeparator());
-        sb.append("End -").append(end).append(System.lineSeparator());
-        sb.append("Duration (ms) -").append(durationMs).append(System.lineSeparator());
+        sb.append("Result - ").append(result).append(System.lineSeparator());
+        sb.append("Start - ").append(start).append(System.lineSeparator());
+        sb.append("End - ").append(end).append(System.lineSeparator());
+        sb.append("Duration (ms) - ").append(durationMs).append(System.lineSeparator());
 
         return sb.toString();
     }

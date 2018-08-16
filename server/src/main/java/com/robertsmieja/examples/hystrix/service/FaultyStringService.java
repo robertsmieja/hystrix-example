@@ -11,8 +11,8 @@ import org.springframework.stereotype.Service;
 @ManagedResource
 @Service
 public class FaultyStringService {
-    private long minDelayMillis = 10;
-    private long maxDelayMillis = 100;
+    private long minDelayMillis = 100;
+    private long maxDelayMillis = 200;
     private long percentOfRequestsToFail = 0;
 
     @ManagedOperation
