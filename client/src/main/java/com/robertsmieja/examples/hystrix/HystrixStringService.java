@@ -38,6 +38,14 @@ public class HystrixStringService {
         return printCommandStats(stringClientCommand);
     }
 
+    @ShellMethod("Send lots of requests")
+    public void keepRunning() throws InterruptedException {
+        while(true){
+            System.out.println(this.faultyHystrixHello("Lots Of Requests"));
+            Thread.sleep(200);
+        }
+    }
+
     private String printCommandStats(HystrixCommand<String> stringClientCommand){
         StringBuffer sb = new StringBuffer();
         Instant start = Instant.now();
