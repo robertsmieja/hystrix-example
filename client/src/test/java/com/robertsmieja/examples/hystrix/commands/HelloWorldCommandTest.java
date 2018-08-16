@@ -18,13 +18,16 @@ public class HelloWorldCommandTest {
 
     @Test
     public void sync(){
-        System.out.println(objectUnderTest.execute());
+        String actual = objectUnderTest.execute();
+        System.out.println(actual);
+        assertEquals("Hello World", actual);
     }
 
     @Test
     public void aSync() throws ExecutionException, InterruptedException {
         Future<String> future = objectUnderTest.queue();
-        System.out.println(future.get());
+        String actual = future.get();
+        System.out.println(actual);
+        assertEquals("Hello World", actual);
     }
-
 }
