@@ -17,16 +17,16 @@ public class FaultyStringService {
 
     @ManagedOperation
     public String helloWorld() throws InterruptedException, IOException {
-        failRequest();
         addDelay();
+        failRequest();
 
         return "Hello World";
     }
 
     @ManagedOperation
     public String hello(String world) throws IOException, InterruptedException {
-        failRequest();
         addDelay();
+        failRequest();
 
         return "Hello " + world;
     }
